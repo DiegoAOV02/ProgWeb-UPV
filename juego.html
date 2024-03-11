@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/views/navbar.css"/>
+    <link rel="stylesheet" href="css/views/styles.css"/>
+    <title>Diego Ortiz</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="intereses.html">Intereses Personales</a></li>
+            <li><a href="curriculum.html">Curriculum Vitae</a></li>
+            <li><a href="juego.html">Juego Tic Tac Toe</a></li>
+        </ul>
+    </nav>
+    <h1 id="title">Juego de Tic-Tac-Toe</h1>
+    <div class="container">
+        <section>
+            <h1 class="game-title">Selecciona una casilla</h1>
+            <div class="game-container">
+                    <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
+            </div>
+                <h3 class="game--status"></h3>
+                <button class="game--restart">Restart Game</button>
+                <button class="show-winners">Show Winners</button>
+                <div class="best-times"></div>
+        </section>
+    </div>
+    <script src="js/tic-tac-toe.js"></script>
+    <script src="js/show-winners.js"></script>
+</body>
+</html>

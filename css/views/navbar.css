@@ -1,0 +1,27 @@
+#navbar {
+    background-color: #14A1F0;
+    height: 20%;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+#navbar a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 20px;
+}
+
+#navbar a:hover {
+    color: #007bff;
+    cursor: pointer;
+    background-color: #000000;
+    transition: background-color 0.5s;
+    height: max-content;
+}

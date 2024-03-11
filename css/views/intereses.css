@@ -1,0 +1,26 @@
+.item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    width: 200px;
+    height: auto;
+    padding-left: 25%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+}
+
+.texto {
+    display: none;
+    margin-left: 25px;
+}
+
+.texto p {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
