@@ -22,6 +22,7 @@ h1, p {
     min-width: 300px;
     margin: 0 auto;
     padding: 15px 15px 15px 15px;
+    text-align: center;
 }
 
 section {

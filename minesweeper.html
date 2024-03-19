@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/views/navbar.css"/>
-    <link rel="stylesheet" href="css/views/styles.css"/>
-    <title>Diego Ortiz</title>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/views/minesweeper.css">
+    <script src="js/minesweeper.js"></script>
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="intereses.html">Intereses Personales</a></li>
-            <li><a href="curriculum.html">Curriculum Vitae</a></li>
-            <li><a href="juego.html">Juego Tic Tac Toe</a></li>
-            <li><a href="minesweeper.html">Busca-minas</a></li>
-        </ul>
-    </nav>
-    <h1 id="title">Diego Alexis Ortiz Vázquez</h1>
-    <div class="container">
-        <section>
-            <h1 class="game-title">Busca-minas</h1>
-            <div class="game-container">
-                
+    <div class="main">
+        <div class="header">
+            <h1>MineSweeper</h1>
+            <div class="formulario-juego">
+                <div class="formulario">
+                    <div class="entrada">
+                        <label for="tamaño">Establecer tamaño (mínimo: 6, máximo: 20): </label>
+                        <input id="tamaño" type="number" min="6" max="20" value="10">
+                    </div>
+                    <div class="entrada">
+                        <label for="num-bombas">Número de bombas (min 1, max: Tamaño x Tamaño): </label>
+                        <input id="num-bombas" type="number" min="1" value="20">
+                    </div>
+                    <div>
+                        <label style="font-size: smaller;">Refrescar la página para volver a jugar*</label>
+                    </div>
+                </div>
+                <button class="btn-generar">Generar</button>
             </div>
-        </section>
+        </div>
+        <div class="contenedor-juego hidden">
+            <h2>Banderas colocadas: <span id="num-banderas"></span> (faltan <span id="banderas-restantes"></span>)</h2>
+            <div class="juego"></div>
+            <div class="resultado-juego"></div>
+        </div>
     </div>
 </body>
 </html>
